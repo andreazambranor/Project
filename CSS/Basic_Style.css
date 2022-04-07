@@ -1,0 +1,106 @@
+body {
+    background-color: #FFFF;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    margin-left: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+div.container {
+    width: 450px;
+    height: 450px;
+    background-color: #b4b4b4;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+
+/*SELECT ALL THE SQURES IN THE ARRAY */
+
+div.contianer div.squares:nth-child(-n+4) {
+    background-image: url(/images/icons/2-yoda.png);
+    color: #FFFF;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+
+/*SELECT ALL THE SQUARES PARAGRAPHS IN THE ARRAY */
+
+div.squares:nth-child(-n+4) p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5cm;
+    font-weight: 900;
+    text-align: center;
+    margin: 0%;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/* INDIVIDAULY SELECT SQUARES IN THE ARRAY*/
+
+div.squares:nth-child(1) {
+    background-color: #ff8c18;
+}
+
+div.squares:nth-child(2) {
+    background-color: #200ad6;
+}
+
+div.squares:nth-child(3) {
+    background-color: #a88772;
+}
+
+div.squares:nth-child(4) {
+    background-color: #cfd6d0;
+}
+
+
+/* HOVER,TRANSLATE AND TRAND=SFORM EFFECTS */
+
+div.container .squares:nth-child(-n+4) :hover {
+    background-image: url(/images/icons/3-bobafett.png);
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, -2, -3, 2);
+}
+
+div.squares:nth-child(1) {
+    background-color: #e7e10a;
+}
+
+div.squares:nth-child(2) {
+    background-color: #517eff;
+}
+
+div.squares:nth-child(3) {
+    background-color: #58491a;
+}
+
+div.squares:nth-child(4) {
+    background-color: #58cd1a;
+}
+
+
+/*ANIMATION EFFECT*/
+
+@keyframes race {
+    0%,
+    100% {
+        tranform: translateY(0px);
+        background-image: url(/images/icons/4-c3po.png);
+    }
+    50% {
+        transform: translateY(330px);
+    }
+}
