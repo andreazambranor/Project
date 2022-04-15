@@ -1,0 +1,363 @@
+/*----------------------------------------
+AUTHOR= ANDREA ZAMBRANO RAMIREZ-----------
+------------------------------------------
+GENERIC STYLE-----------------------------
+----------------------------------------*/
+
+html {
+    font-family: sans-serif;
+    font-size: 63.50;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.42057143;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+}
+
+footer,
+nav {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    line-height: 54px;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa52e;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h1::after {
+    /*--THIS IS THE UNDERLINE ON EACH HEADER--*/
+    display: block;
+    content: '';
+    height: 2px;
+    width: 156px;
+    background: #ffa52e;
+    margin: 2px auto 40px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    line-height: 50px;
+    color: #e91c1c;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.nav-bar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+    width: 100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /*This ensures that the images cannot render outside of 
+    their container without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0 auto;
+    content: "";
+    /*two values on margin, 0:top and bottom, 
+    auto:left and right. That is how you center something*/
+    width: 100%;
+    position: fixed;
+    z-index: 100
+}
+
+
+/*HOME SECTION STYLES*/
+
+#home {
+    background: url(../images/Images/banner.jpg) no-repeat 30% 30%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -ms-bakcground-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 5pt;
+    font-size: 4.5cm;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px;
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
+    padding: 5px;
+}
+
+
+/*------------
+CONTACT STYLES
+============*/
+
+.flex.container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 0px auto;
+    background-color: rgba(100, 45, 0, .3);
+    box-shadow: -2px -1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#contact {
+    background-color: #f3f3f3;
+}
+
+.reservations {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(100, 45, 0, .3);
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.reservations h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161f;
+    font-weight: 500;
+    font-size: 1.3cm;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.reservations h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #131415;
+    font-weight: 500;
+    font-size: 1.5cm;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservations p {
+    color: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservations form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #1c434f;
+    padding: 10px 12px;
+    width: 70%;
+    border: 1px solid #f0f0f0;
+    margin: 24 auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reservations input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #1d1e8f;
+    padding: 24 14 24 74;
+    width: 80%;
+    border-top: 1px solid #090800;
+    border-right: 2px solid #424545;
+    border-bottom: 2pxsolid #424545;
+    border-left: 1px solid #090800;
+    margin: 10px 1cm;
+    box-shadow: inset 0px 3px 0px 0px rgba(3, 5, 5, 0.15);
+    border-radius: 7px;
+    background: #121418;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.reservations input[type="text"]:hover {
+    box-shadow: 0 0 1px rgba(100, 65, 0, .6);
+}
+
+.form-spacer {
+    padding: 30px 29px;
+}
+
+.terms {
+    margin: 20px 1px 0 0;
+    padding-left: 53px;
+    font-size: 14px;
+    line-height: 7px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="text"] {
+    color: rgb(225, 225, 225);
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    outline: none text;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px 34;
+    padding: 7px 0px;
+    width: 11px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    background-color: #4d4e4f;
+    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*-----------
+FOOTER STYLES
+-----------*/
+
+#footer {
+    background-color: rgba(100, 65, 0, 3);
+    color: #000;
+    text-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px 50px 20px 50px;
+    text-align: right;
+}
+
+.white-head {
+    color: #c4e0aa;
+    margin-top: 54;
+}
+
+
+/*----------------------
+PHOTO OVERLAY TRANSITION
+----------------------*/
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5px;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transition: scale 1.1;
+}
